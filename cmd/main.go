@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	app := web.New()
+	app := web.New(web.LoadConfig())
 
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
 	defer cancel()

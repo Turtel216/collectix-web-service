@@ -12,13 +12,15 @@ import (
 type App struct {
 	router http.Handler
 	rdb    *redis.Client
+	config Config
 }
 
-func New() *App {
+func New(config Config) *App {
 	app := &App{
 		rdb: redis.NewClient(&redis.Options{
-			Addr: "redis:6379",
+			Addr: config.RedisAddress,
 		}),
+		config: config,
 	}
 
 	app.loadRoutes()
@@ -28,7 +30,7 @@ func New() *App {
 
 func (app *App) Start(ctx context.Context) error {
 	server := &http.Server{
-		Addr:    ":8080",
+		Addr:    fmt.Sprintf(":%d", app.config.ServerPort),
 		Handler: app.router,
 	}
 
