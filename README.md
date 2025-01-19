@@ -2,7 +2,7 @@
 
 > ⚠️ **Disclaimer**: This project is currently a **Work in Progress (WIP)** and is not fully finished. Some features may be incomplete or unstable. Contributions and feedback are welcome as I continue to improve the application!
 
-A web service to store and manage your collections, built with **Golang**, **Chi**, **Redis**, and containerized using **Docker** and **Docker-compose**. This API allows users to add, retrieve, update, and delete items in their geeky collections, such as comic books, action figures, trading cards, or any other collectible items.
+A web service to store and manage your collections, built with **Golang**, **Chi**, **Redis**, and containerized using **Docker** and **Docker-compose**. This API allows users to add, retrieve, update, and delete items in their collections, such as comic books, action figures, trading cards, or any other collectible items.
 
 ## Features
 
@@ -29,8 +29,8 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/geeky-collections-api.git
-cd geeky-collections-api
+git clone https://github.com/your-username/collectix-web-service.git
+cd collectix-web-service
 ```
 
 ### 2. Build and Run with Docker Compose
