@@ -18,7 +18,7 @@ A web service to store and manage your collections, built with **Golang**, **Chi
 
 Before running the project, ensure you have the following installed:
 
-- [Golang](https://golang.org/doc/install) (v1.20+)
+- [Golang](https://golang.org/doc/install) (v1.23+)
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/)
 

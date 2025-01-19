@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Turtel216/Go-Microservice/cmd/web"
+	"github.com/Turtel216/collecix-web-service/cmd/web"
 )
 
 func main() {

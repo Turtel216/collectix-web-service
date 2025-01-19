@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/Turtel216/Go-Microservice/internal/models"
+	"github.com/Turtel216/collecix-web-service/internal/models"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -55,7 +55,7 @@ func (r *RedisRepo) Insert(ctx context.Context, collection models.Collection) er
 	return nil
 }
 
-func (r *RedisRepo) findById(ctx context.Context, id uint64) (models.Collection, error) {
+func (r *RedisRepo) FindById(ctx context.Context, id uint64) (models.Collection, error) {
 	key := collectionIdKey(id)
 
 	value, err := r.Client.Get(ctx, key).Result()
