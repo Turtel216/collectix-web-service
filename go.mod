@@ -1,4 +1,4 @@
-module github.com/Turtel216/Go-Microservice
+module github.com/Turtel216/collecix-web-service
 
 go 1.23.3
 

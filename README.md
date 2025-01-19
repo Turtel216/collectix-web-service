@@ -1,4 +1,4 @@
-# Collections API
+# CollectiX Web Service
 
 > ⚠️ **Disclaimer**: This project is currently a **Work in Progress (WIP)** and is not fully finished. Some features may be incomplete or unstable. Contributions and feedback are welcome as I continue to improve the application!
 
