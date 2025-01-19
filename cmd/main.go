@@ -14,4 +14,6 @@ func main() {
 	if err != nil {
 		fmt.Println("failed to start app:", err)
 	}
+
+	fmt.Println("Started Application at 8080")
 }
