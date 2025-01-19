@@ -9,13 +9,14 @@ import (
 	"strconv"
 
 	"github.com/Turtel216/collecix-web-service/internal/models"
+	"github.com/Turtel216/collecix-web-service/internal/repository"
 	"github.com/Turtel216/collecix-web-service/internal/repository/collection"
 	"github.com/go-chi/chi"
 	"github.com/google/uuid"
 )
 
 type Collection struct {
-	Repo *collection.RedisRepo
+	Repo repository.Repo
 }
 
 func (c *Collection) Create(w http.ResponseWriter, r *http.Request) {
