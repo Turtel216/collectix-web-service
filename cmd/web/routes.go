@@ -16,7 +16,7 @@ func loadRoutes() *chi.Mux {
 		w.WriteHeader(http.StatusOK)
 	})
 
-	router.Route("/tasks", loadTaskRoutes)
+	router.Route("/collections", loadTaskRoutes)
 
 	return router
 }

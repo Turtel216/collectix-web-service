@@ -37,6 +37,8 @@ func (app *App) Start(ctx context.Context) error {
 		return fmt.Errorf("Failed to connect to redis: %w", err)
 	}
 
+	fmt.Println("Starting server")
+
 	defer func() {
 		if err := app.rdb.Close(); err != nil {
 			fmt.Println("failed to close redis", err)
