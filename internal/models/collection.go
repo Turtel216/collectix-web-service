@@ -9,7 +9,8 @@ type Collection struct {
 }
 
 type Item struct {
-	ItemID   uuid.UUID `json:"item_id"`
-	Quantity uint      `json:"quantity"`
-	Price    uint      `json:"price"`
+	ItemID      uuid.UUID `json:"item_id"`
+	Description string    `json:"description"`
+	Quantity    uint      `json:"quantity"`
+	Price       uint      `json:"price"`
 }
