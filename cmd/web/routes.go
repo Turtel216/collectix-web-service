@@ -16,5 +16,17 @@ func loadRoutes() *chi.Mux {
 		w.WriteHeader(http.StatusOK)
 	})
 
+	router.Route("/tasks", loadTaskRoutes)
+
 	return router
+}
+
+func loadTaskRoutes(router chi.Router) {
+	orderHandler := &Task{}
+
+	router.Post("/", orderHandler.Create)
+	router.Get("/", orderHandler.List)
+	router.Get("/{id}", orderHandler.GetById)
+	router.Put("/{id}", orderHandler.UpdateById)
+	router.Delete("/{id}", orderHandler.DeleteById)
 }
